@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Header Example</title>
+  <link id="theme-style" rel="stylesheet" href="css/style.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="media/logo.png"> <a href="index.html"><strong style="font-family: Montserrat, sans-serif;">your own shoot.</strong></a>
+        <div class="navbar-left">
+            <a href="#home">Home</a>
+            <a href="#Collections">Collections</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#faqs">FAQs</a>
+            <a href="#about">About</a>
+            <button type="button" class="btn btn-outline-dark">Book our trial session</button>
+            <button type="button" class="btn btn-dark">Sign up</button>
+        </div>
+
+    </nav>
+    
+    <main id="content">
+        <div class="row banner position-relative">
+            <div class="col-8">
+                <h2>A better photo starts here</h2>
+                <p>Visual representation that you never thought you could have it,<br>One shot, one kill.</p>
+                <button type="button" class="btn btn-outline-dark">Log in</button>
+                <button type="button" class="btn btn-dark">Book our trial session</button>
+                <p class="small-info">* Try our photoshot trial session now!</p>
+            </div>
+            <div class="col-4 d-flex justify-content-end align-items-center">
+                <img src="media/2.png" class="img-fluid" alt="" style="max-width: 40%;">
+            </div>
+        </div>
+        <div class="banner-footer">
+            <div class="text-center">
+                <h2><em><u>your own shot.</u></em> is trusted by 1,262,773 clients in 180+ countries</h2>
+            </div>
+    
+            <div class="company-logos">
+                <img src="https://images.ctfassets.net/lh3zuq09vnm2/4Y87kRrhSPSYgUbSWYxP1z/a13177cf43f99e7a79c691c54e271a98/Hubspot.svg" alt="">
+                <img src="https://images.ctfassets.net/lh3zuq09vnm2/1FA2gEsWeu2MyGSy6Qp6ao/859833105cdd6ed5cc75eb5e4bd9cff7/HelloFresh.svg" alt="">
+                <img src="https://images.ctfassets.net/lh3zuq09vnm2/vHHaKAaEeQuNcucdWM50V/23351da3b1ad9d7483ddf11aed64b4b7/Mixpanel.svg" alt="">
+                <img src="https://images.ctfassets.net/lh3zuq09vnm2/7hhEfCdZPI7mPC24fFsC94/adf392604ef673a224307e48ac87bd96/Adobe.svg" alt="">
+                <img src="https://images.ctfassets.net/lh3zuq09vnm2/7dsuPwH4V8KJvCexSZueZc/272b2ef619de8ae4b443758413a19733/Unbounce_Logo.svg" alt="">
+                <img src="https://images.ctfassets.net/lh3zuq09vnm2/4k0usVcPorDDiahHycRQKA/b8ef8b30f9c43c60a4880740108b4676/Miro.svg" alt="">
+                <img src="https://images.ctfassets.net/lh3zuq09vnm2/6jZ182ywMavcqhY7WiLS5x/fb3c393066ae09dc17819472dc605d8f/15Five.svg" alt="">
+            </div>
+        </div>
+
+        <div class="pricing">
+            <h2>Sign up for free, and book our trial session now!</h2>
+            <p>All the pricing our services when you need to confidently optimize your photo visual— in one place.</p>
+
+            <div class="flip-card">
+                <div class="row row-cols-1 row-cols-md-3 g-4 d-flex justify-content-between">
+                    <div class="col">
+                        <div class="card-container-1 card-container"> <!-- This is the container that will flip --> 
+                            <div class="card h-100 card-front">
+                                <img src="media/wedding.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Wedding session</h5>
+                                    <p class="card-text">Discover the art of love with our wedding photoshoots—where every snapshot is a brushstroke on the canvas of your journey. We capture the essence of your union, crafting images that resonate with poetry and grace, turning moments into timeless art.</p>
+                                    <button class="btn btn-dark" onclick="flipCard(this.closest('.card-container-1'))">Details</button>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-body-secondary">Contact us for more info!</small>
+                                </div>
+                            </div>
+
+                            <div class="card h-100 card-back">
+                                <img src="media/5.jpg" class="card-img-bottom" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Starts from $500</h5>
+                                    <p class="card-text">Pre-consultation, professional photography, photo editing, image delivery, prints & albums, additional sessions, duration, rights</p>
+                                    <button class="btn btn-dark" onclick="flipCard(this.closest('.card-container'))">Close</button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card-container-2 card-container"> <!-- This is the container that will flip --> 
+                            <div class="card h-100 card-front">
+                                <img src="media/personal.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Personal session</h5>
+                                    <p class="card-text">Immerse in a personal photoshoot where each frame is a tribute to your unique story. Embrace a session that paints your essence with light and shadow, crafting not just images, but a gallery of your individuality on your own space, and on your own album.</p>
+                                    <button class="btn btn-dark" onclick="flipCard(this.closest('.card-container-2'))">Details</button>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-body-secondary">Contact us for more info!</small>
+                                </div>
+                            </div>
+
+                            <div class="card h-100 card-back">
+                                <img src="media/personal2.jpg" class="card-img-bottom" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Starts from $300</h5>
+                                    <p class="card-text">Pre-consultation, professional photography, photo editing, image delivery, prints & albums, additional sessions, duration, rights</p>
+                                    <button class="btn btn-dark" onclick="flipCard(this.closest('.card-container'))">Close</button>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card-container-3 card-container"> <!-- This is the container that will flip --> 
+                            <div class="card h-100 card-front">
+                                <img src="media/business.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bussiness session</h5>
+                                    <p class="card-text">Discover the power of professional poise mixed with creative flair in our business photoshoots. We specialize in crafting compelling, polished images that speak volumes about your brand’s unique vision you stand for. Elevate your corporate identity with portraits.</p>
+                                    <button class="btn btn-dark" onclick="flipCard(this.closest('.card-container-3'))">Details</button>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-body-secondary">Contact us for more info!</small>
+                                </div>
+                            </div>
+                            
+                            <div class="card h-100 card-back">
+                                <img src="media/business2.jpg" class="card-img-bottom" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Starts from $700</h5>
+                                    <p class="card-text">Pre-consultation, professional photography, photo editing, image delivery, prints & albums, additional sessions, duration, rights</p>
+                                    <button class="btn btn-dark" onclick="flipCard(this.closest('.card-container'))">Close</button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <article id="thumbnail">
+            <h2>Some Collections</h2>
+            <figure>
+                <!-- thumbnail -->
+                <div class="thumbnail">
+                    <a href="media/1.JPG"><img src="media/1.JPG"
+                            alt="A photo of Szent Gellert Bridge located in Budapest, Hungary in black and white color"></a>
+                    <a href="media/9.JPG"><img src="media/9-lower.JPG"
+                            alt="A photo of a laying girl closing her eyes with her left hand in black and white color"></a>
+                    <a href="media/14.JPG"><img src="media/14.JPG"
+                            alt="A photo of 2 girls crossing the road with 2 cars passed behind them in Prague, Czech Republic in black and white color"></a>
+                    <a href="media/6.JPG"><img src="media/6.JPG"
+                            alt="A photo of a castle located in Prague, Czech Republic in black and white color"></a>
+                </div>
+
+                <div class="thumbnail">
+                    <a href="media/5-copy.JPG"><img src="media/5-copy.JPG"
+                            alt="A photo of a statue where a girl is holding her head using her hand in black and white color"></a>
+                    <a href="media/15.JPG"><img src="media/15.JPG"
+                            alt="A photo of a trafic light in Prague, Czech Republic in black and white color"></a>
+                    <a href="media/16.jpg"><img src="media/16.jpg"
+                            alt="A photo of a bridge where it has a tram 4 crossing the bridge in Budapest, Hungary in black and white color"></a>
+                    <a href="media/8.JPG"><img src="media/8.JPG"
+                            alt="A photo of an art from a museum where it seems like a human holding his belly abstractly in Prague, Czech Republic in black and white color"></a>
+                </div>
+                <figcaption>"Elevating Visual Experiences"</figcaption>
+            </figure>
+        </article>
+    
+        <!-- Footer -->
+        <footer
+                class="text-center text-lg-start text-white"
+                style="background-color: #1c2331"
+                >
+        <!-- Section: Social media -->
+        <section
+                class="d-flex justify-content-between p-4"
+                style="background-color: black"
+                >
+            <!-- Left -->
+            <div class="me-5">
+            <span>Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+    
+            <!-- Right -->
+            <div>
+            <a href="" class="text-white me-4">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="text-white me-4">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="text-white me-4">
+                <i class="fab fa-google"></i>
+            </a>
+            <a href="" class="text-white me-4">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="text-white me-4">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="" class="text-white me-4">
+                <i class="fab fa-github"></i>
+            </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+    
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold">your own shot.</h6>
+                <hr
+                    class="mb-4 mt-0 d-inline-block mx-auto"
+                    style="width: 60px; background-color: darkgray; height: 2px"
+                    />
+                <p>
+                    A better photo literally starts here.
+                    We are here to help you to get the best photo you want.
+                </p>
+                </div>
+                <!-- Grid column -->
+    
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold">Products</h6>
+                <hr
+                    class="mb-4 mt-0 d-inline-block mx-auto"
+                    style="width: 60px; background-color: darkgray; height: 2px"
+                    />
+                <p>
+                    <a href="#!" class="text-white">Photography</a>
+                </p>
+                <p>
+                    <a href="#!" class="text-white">Videography</a>
+                </p>
+                <p>
+                    <a href="#!" class="text-white">Video Editing</a>
+                </p>
+                <p>
+                    <a href="#!" class="text-white">Photo Editing</a>
+                </p>
+                </div>
+                <!-- Grid column -->
+    
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold">Useful links</h6>
+                <hr
+                    class="mb-4 mt-0 d-inline-block mx-auto"
+                    style="width: 60px; background-color: darkgray; height: 2px"
+                    />
+                <p>
+                    <a href="#!" class="text-white">Instagram</a>
+                </p>
+                <p>
+                    <a href="#!" class="text-white">LinkedIn</a>
+                </p>
+                <p>
+                    <a href="#!" class="text-white">Tiktok</a>
+                </p>
+                <p>
+                    <a href="#!" class="text-white">YouTube</a>
+                </p>
+                </div>
+                <!-- Grid column -->
+    
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold">Contact</h6>
+                <hr
+                    class="mb-4 mt-0 d-inline-block mx-auto"
+                    style="width: 60px; background-color: darkgray; height: 2px"
+                    />
+                <p><i class="fas fa-home mr-3"></i>Budapest, Hungary</p>
+                <p><i class="fas fa-envelope mr-3"></i>helloimrizy@gmail.com</p>
+                <p><i class="fas fa-phone mr-3"></i>+36 30 3900 590</p>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+    
+        <!-- Copyright -->
+        <div
+            class="text-center p-3"
+            style="background-color: rgba(0, 0, 0, 0.2)"
+            >
+            © 2023 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/"
+            >Your Own Shot.</a
+            >
+        </div>
+        <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
